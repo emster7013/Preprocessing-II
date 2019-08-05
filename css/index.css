@@ -285,12 +285,7 @@ nav .Funbus,
     display: flex;
     flex-direction: column;
     width: 98%;
-  }
-  .text-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border: 1px solid blue;
+    margin-top: 20px;
   }
   .img-content {
     display: flex;
@@ -301,15 +296,38 @@ nav .Funbus,
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 8px;
+    width: 150%;
+    margin-left: 15px;
   }
   .content-pick {
     display: flex;
     flex-direction: column;
   }
   .destination {
-    border: purple 1px solid;
-    width: 100%;
     margin-left: 15px;
+  }
+  .destination h4,
+  .destination p {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    width: 200%;
+  }
+  .destination .btn {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    height: 40px;
+    font-size: 1.4rem;
+    width: 200px;
+    background-color: #17A2B8;
+  }
+  .destination .btn .button {
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #17A2B8;
+  }
+  .footer {
+    width: 100%;
   }
 }
