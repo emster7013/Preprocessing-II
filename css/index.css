@@ -173,6 +173,7 @@ nav,
 .Funbus {
   display: flex;
   font-size: 1.8rem;
+  flex-direction: row;
   justify-content: space-evenly;
   border-bottom: 2px dashed silver;
   width: 95%;
@@ -180,10 +181,43 @@ nav,
 }
 .navi a,
 nav a,
-.Funbus a {
+.Funbus a,
+.navi nav,
+nav nav,
+.Funbus nav,
+.navi .Funbus,
+nav .Funbus,
+.Funbus .Funbus {
   display: flex;
+  align-items: space-between;
   color: black;
   text-decoration: none;
+  border: none;
+}
+@media (max-width: 500px) {
+  .navi,
+  nav,
+  .Funbus {
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .navi a,
+  nav a,
+  .Funbus a,
+  .navi nav,
+  nav nav,
+  .Funbus nav,
+  .navi .Funbus,
+  nav .Funbus,
+  .Funbus .Funbus {
+    display: flex;
+    font-size: 1.4rem;
+    align-items: space-between;
+    border: none;
+  }
 }
 .footer {
   width: 100%;
@@ -245,4 +279,37 @@ nav a,
 .welcome {
   border-bottom: 2px dashed silver;
   margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+  }
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid blue;
+  }
+  .img-content {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px;
+  }
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px;
+  }
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+  }
+  .destination {
+    border: purple 1px solid;
+    width: 100%;
+    margin-left: 15px;
+  }
 }

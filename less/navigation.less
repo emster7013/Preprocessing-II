@@ -3,14 +3,32 @@
 .navi, nav, .Funbus {
     display: @display;
     font-size: 1.8rem;
+    flex-direction: row;
     justify-content: space-evenly;
     border-bottom: 2px dashed silver;
     width: 95%;
     margin-left: 20px;
-    a {
+    a, nav, .Funbus {
     display: @display;
-   // align-items: space-between;
+    align-items: space-between;
     color:black;
     text-decoration: none;
+    border: none;
     }
+}
+@media @mobile {
+    .navi, nav, .Funbus {
+    display: @display;
+    width: 95%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    a, nav, .Funbus {
+        display: @display;
+        font-size: 1.4rem;
+        align-items: space-between;
+        border: none;
+        
+    }
+}
 }
